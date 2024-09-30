@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Info Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Info Finder</h1>
+        <input type="text" id="stockInput" placeholder="Enter stock name (e.g., Tata Steel)" />
+        <button id="fetchButton">Get Stock Info</button>
+        
+        <div class="stock-card" id="stockCard" style="display: none;">
+            <h2 id="stockName">Stock Name</h2>
+            <div class="stock-details">
+                <div class="detail">
+                    <span>Current Price:</span>
+                    <span id="currentPrice">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Change:</span>
+                    <span id="percentChange">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Bid:</span>
+                    <span id="bid">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Ask:</span>
+                    <span id="ask">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>High:</span>
+                    <span id="high">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Low:</span>
+                    <span id="low">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Volume:</span>
+                    <span id="volume">Loading...</span>
+                </div>
+                <div class="detail">
+                    <span>Date:</span>
+                    <span id="date">Loading...</span>
+                </div>
+            </div>
+
+            <h3>Technical Data</h3>
+            <div class="technical-data" id="technicalData"></div>
+
+            <h3 id="recommendation">Recommendation: <span id="recommendationValue"></span></h3>
+            <h3 id="marketStatus">Market Status: <span id="marketStatusValue"></span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
